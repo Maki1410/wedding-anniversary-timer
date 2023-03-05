@@ -1,0 +1,144 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0; 
+}
+
+html {
+
+    font-family: DynaPuff, sans-serif;
+    background-color: rgba(195, 185, 251, 0.303);
+  
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 183, 183, 0.7);
+    margin: 50px auto;
+    border-radius: 50%;
+
+}
+
+.cornice {
+    position: relative;
+}
+
+
+.header {
+    width: 350px;
+    height: 100px;
+
+    position: absolute;
+    top: 116px;
+    left: 75px;
+   
+    
+}
+
+h1 {
+    margin: 12px auto;
+    text-align: center;
+    color: rgba(150, 0, 0, 0.866);
+    line-height: 1.3;
+        
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.timer-block {
+    height: 70px;
+    width: 70px;
+    color: rgba(255, 183, 183, 0.7);
+    text-align: center;
+    line-height: 1.3; /*per decidere l'interlinea tra le righe*/
+    
+    
+}
+
+.timer-block:last-child {
+    color: rgba(255, 255, 255, 0.511);
+}
+
+.timer-number {
+    font-size: 50px;
+       
+    background-color: rgba(150, 0, 0, 0.866);
+    width:68px;
+    height: 68px;
+    border-radius: 50%;
+}
+
+.timer-label {
+    font-size: 16px;
+    color: rgba(150, 0, 0, 0.866);
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.sposi {
+    width: 200px;
+    
+    position: absolute;
+    top: 315px;
+    left: 32px;
+}
+
+.sposi:hover {
+    animation-name: bump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.buon-anniversario {
+    width: 500px;
+    height: 382px;
+    position: absolute;
+    left: 16px;
+    bottom: 65px;
+    opacity: 0.1;
+    
+}
+
+.buon-anniversario:hover {
+    animation-name: bump2;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.cornice-timer {
+    opacity: 0.7;
+}
+
+/* Animazioni */
+
+@keyframes bump {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes bump2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+
+
